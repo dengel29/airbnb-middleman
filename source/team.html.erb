@@ -1,9 +1,10 @@
 <!-- team.html.erb -->
-<ul class="list-inline text-center">
-  <% ["ymbrian", "dengel29", "monsieurpaillard"].each do |gh_username| %>
-    <li>
-      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "avatar-large" %>
-      <h3><%= gh_username.capitalize %></h3>
-    </li>
-  <% end %>
-</ul>
+
+  <ul class="list-inline text-center">
+    <% ["ymbrian", "dengel29"].each do |username| %>
+      <li>
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{username}.jpeg", class: "avatar-large" %>
+        <h3> <%= username.capitalize %> </h3>
+      </li>
+    <% end %>
+  </ul>
